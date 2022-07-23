@@ -58,7 +58,9 @@ const (
 
 func main() {
 	var path string
+	var trims string
 	flag.StringVar(&path, "output", "./rss.xml", "specify the output file path")
+	flag.StringVar(&trims, "trims", "[电影天堂www.dytt89.com]", "specify the prefix to be trim")
 	flag.Parse()
 
 	movies, err := homepage()
